@@ -1,0 +1,78 @@
+@use 'helpers' as *;
+html {
+    &.is-lock{
+        overflow: hidden
+    }
+}
+body{
+    @include fluid-text(16, 12);
+
+    font-family: var(--font-family);
+    color: var(--color-dark);
+    background-color: var(--color-light);
+
+
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    flex-grow: 1;
+}
+
+.h1{
+font-family: var(--font-family);
+font-weight: 300;
+font-size: fluid(64, 24);
+line-height: 100%;
+color: var(--color-accent);
+text-transform: capitalize;
+}
+
+.h2{
+font-family: var(--font-family);
+font-weight: 700;
+font-size: fluid(64, 24);
+line-height: 100%;
+color: var(--color-dark-10);
+}
+
+a,
+button,
+input,
+label,
+textarea,
+select,
+svg *{
+    transition-duration: var(--transition-duration);
+}
+
+a{
+    color: inherit;
+
+    @include hover{
+        color: var(--color-accent);
+    }
+
+
+    &[class] {
+        text-decoration: none;
+    }
+}
+
+:focus-visible{
+    outline: rem(2) dashed var(--color-light);
+    outline-offset: rem(4);
+
+    transition-duration: 0s !important;
+}
+
+a{
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: fluid(12, 10);
+line-height: 100%;
+letter-spacing: 0.2em;
+text-transform: uppercase;
+color: var(--color-dark);
+}

@@ -1,0 +1,26 @@
+@use '../helpers' as *;
+
+.contact{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: rem(10);
+    justify-content: space-between;
+    margin-top: fluid(60, 20);
+    margin-left: rem(10);
+    margin-right: rem(10);
+
+    @media (max-width: 1100px){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__form p{
+
+        margin: rem(10);
+        margin-left: 0;
+        width: 100%;
+        
+    }
+}

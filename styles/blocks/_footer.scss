@@ -1,0 +1,75 @@
+@use '../helpers' as *;
+
+.footer{
+    background-color: var(--color-dark-1);
+    color: var(--color-white);
+    display: flex;
+    justify-content: space-between;
+    padding: rem(20);
+    margin-top: fluid(60, 30);
+    margin-left: 0;
+    padding-left: 0;
+    column-gap: rem(5);
+    
+    @media (max-width: 600px){
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+    &__logo{
+        margin-left: rem(10);
+    }
+
+    &__link{
+        font-family: var(--font-family);
+font-weight: 500;
+font-size: rem(14);
+line-height: 171%;
+letter-spacing: 0.03em;
+color: #fff;
+        text-transform: capitalize;
+    }
+
+    &__title{
+        font-family: var(--font-family);
+font-weight: 700;
+font-size: fluid(16, 12);
+color: #fff;
+        margin-bottom: rem(25);
+        @media (max-width: 600px){
+            margin-top: rem(40);
+            align-items: center;
+            justify-content: center;
+        }
+
+    }
+
+
+}
+
+.information__list{
+    display: flex;
+    flex-direction: column;
+    row-gap: fluid(16, 10);
+}
+
+.contacts__list{
+    display: flex;
+    flex-direction: column;
+    row-gap: fluid(32, 17);
+
+}
+
+.contacts__item{
+    display: flex;
+    column-gap: rem(10);
+    align-items: center;
+}
+
+.soc1als__list{
+    display: flex;
+    column-gap: fluid(40, 20);
+}

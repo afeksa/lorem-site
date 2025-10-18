@@ -1,0 +1,100 @@
+@use '../helpers' as *;
+
+.projects {
+  margin-top: fluid(60, 20);
+  margin-left: rem(10);
+  margin-right: rem(10);
+
+  &__list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: fluid(30, 15);
+    justify-content: center;
+  }
+
+  &__content{
+    opacity: 0;
+    position: absolute;
+    height: 100%;
+    background: #333;
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+
+    &:hover{
+      opacity: 0.8;
+      transition-duration: 0.5s;
+    }
+
+  }
+
+
+    &__title{
+        margin-bottom: fluid(60, 20);
+    }
+
+    &__all{
+      display: flex;
+      align-items: end;
+      justify-content: end;
+    }
+
+    &__button{
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        width: fluid(200, 170);
+       
+    }
+
+    &__link{
+        display: inline-flex;
+        justify-content: end;
+        align-items: end;
+        margin-top: rem(10);
+        position: relative;
+    }
+
+.content{
+
+  &__title{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: fluid(60, 20);
+    line-height: 100%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    margin-bottom: rem(8);
+    margin-left: rem(25);
+    max-width: 80%;
+  }
+
+  &__view{
+      background-color: transparent;
+      border: none;
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 100%;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #fff;
+      display: flex;
+      justify-content: start;
+      margin-left: rem(25);
+      margin-right: auto;
+  }
+    
+}
+
+}
+
+.project3{
+  margin-left: rem(5);
+}
+
+
+

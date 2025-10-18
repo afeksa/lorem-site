@@ -1,0 +1,25 @@
+@use 'helpers' as *;
+
+:root{
+
+    --color-gray: #E5E5E5;
+    --color-light: #FBFBFB;
+    --container-width: #{rem(1600)};
+    --container-padding-x: #{rem(16)};
+    --color-gray-6: #f2f2f2;
+    --color-accent: #bdbdbd;
+    --color-dark: #000;
+    --color-dark-10: #333;
+    --color-gray-10: #f3f3f3;
+    --color-dark-1: #2c2c2c;
+    --color-white: #ffffff;
+
+    --font-family: "Roboto", sans-serif;
+
+    @include laptop {
+        --container-width: #{rem(1280)};
+    }
+
+    --transition-duration: 0.2s;
+
+}

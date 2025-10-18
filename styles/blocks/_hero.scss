@@ -1,0 +1,52 @@
+@use '../helpers' as *;
+
+.hero{
+    display: flex;
+    column-gap: rem(20);
+    padding: rem(0) rem(10);
+    justify-content: space-between;
+    margin-bottom: fluid(60, 20);
+    margin-left: rem(10);
+    margin-right: rem(10);
+
+
+
+    &__description{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: fluid(40, 20);
+    }
+    &__body{
+        position: relative;
+    }
+
+    &__title{
+        text-transform: uppercase;
+    }
+}
+
+.body__image{
+    position: relative;
+   
+}
+
+.body__link{
+    position: absolute;
+    background-color: var(--color-light);
+    z-index: 50;
+    transform: translateY(-100%);
+
+    @include mobile{
+        transform: none;
+        position: relative;
+        border: 1px solid var(--color-dark-10);
+        margin-top: rem(5);
+        z-index: -100;
+
+        &:hover{
+            border: var(--color-accent);
+        }
+    }
+
+}

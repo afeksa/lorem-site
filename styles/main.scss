@@ -1,0 +1,21 @@
+@use 'normalize';
+@use 'fonts';
+@use 'variables';
+@use 'utils';
+@use 'globals';
+
+@use 'blocks/header';
+@use 'blocks/burger';
+@use 'blocks/hero';
+
+@use 'blocks/about';
+@use 'blocks/button';
+
+@use 'blocks/mission';
+
+@use 'blocks/projects';
+
+@use 'blocks/contact';
+@use 'blocks/form';
+
+@use 'blocks/footer';

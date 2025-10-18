@@ -1,0 +1,22 @@
+@use '../helpers' as *;
+.contact__form{
+    width: 100%;
+}
+
+input,
+textarea{
+    background-color: var(--color-gray-10);
+    border: none;
+    padding: rem(10);
+    width: 100%;
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 14px;
+letter-spacing: 0.04em;
+color: #8d8d8d;
+width: 100%;
+
+    &:focus{
+        border: 1px solid var(--color-dark);
+    }
+}

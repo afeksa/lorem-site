@@ -1,0 +1,38 @@
+@use '../helpers' as *;
+
+.mission{
+    display: flex;
+    flex-direction: column;
+    margin-left: rem(10);
+    margin-right: rem(10);
+
+    margin-top: fluid(60, 20);
+
+    &__body{
+        display: flex;
+        column-gap: rem(60);
+
+    @media(max-width: 650px){
+        display: flex;
+        flex-direction: column;
+        row-gap: rem(10);
+    }
+
+
+    }
+}
+
+.statement{
+    display: flex;
+    column-gap: rem(10);
+
+    &__number{
+        font-family: var(--font-family);
+    font-weight: 900;
+    font-size: rem(300);
+    }
+}
+
+.mission__title{
+    margin-bottom: fluid(60, 20);
+}
