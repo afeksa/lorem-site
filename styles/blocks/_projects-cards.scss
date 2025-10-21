@@ -1,0 +1,50 @@
+@use '../helpers' as *;
+
+.our-projects {
+  margin-top: fluid(60, 20);
+  margin-left: rem(10);
+  margin-right: rem(10);
+
+  &__header{
+    margin-bottom: fluid(60, 10);
+  }
+
+  &__card{
+    display: flex;
+    margin-bottom: fluid(60, 20);
+    column-gap: rem(20);
+    background: var(--color-gray);
+
+    @media (max-width: 1150px){
+      flex-direction: column;
+      row-gap: rem(10);
+      align-items: center;
+    }
+  }
+}
+
+.card__content{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: fluid(30, 20);
+
+  @media(max-width: 1150px){
+    row-gap: rem(10);
+    justify-content: center;
+    align-items: center;
+    max-width: 670px;
+  }
+}
+
+.card__title{
+  font-size: rem(40);
+  
+}
+
+.card__image{
+   @media(max-width: 1150px){
+    padding-top: rem(30);
+   }
+}
