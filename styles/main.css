@@ -932,4 +932,48 @@ textarea:focus {
   .card__image {
     padding-top: 1.875rem;
   }
+}
+
+.contacts {
+  margin-top: clamp(1.25rem, 0.612745098rem + 2.614379085vw, 3.75rem);
+  margin-left: 0.625rem;
+  margin-right: 0.625rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.625rem;
+}
+@media (max-width: 450px) {
+  .contacts {
+    flex-direction: column;
+  }
+}
+.contacts__map {
+  width: 50vw;
+}
+.contacts__content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  margin-bottom: 0.625rem;
+  justify-content: space-between;
+}
+.contacts__header {
+  margin-bottom: clamp(0.625rem, -0.1715686275rem + 3.2679738562vw, 3.75rem);
+}
+
+.company__name {
+  font-size: 1.125rem;
+}
+
+iframe {
+  width: 50vw;
+  height: 50vh;
+}
+@media (max-width: 450px) {
+  iframe {
+    width: 90vw;
+    height: 18.75rem;
+    display: flex;
+    align-items: center;
+  }
 }/*# sourceMappingURL=main.css.map */
