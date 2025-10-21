@@ -823,8 +823,8 @@ textarea:focus {
     align-items: center;
   }
 }
-.footer__logo {
-  margin-left: 0.625rem;
+.footer__information {
+  padding-left: 0.625rem;
 }
 .footer__link {
   font-family: var(--font-family);
@@ -841,13 +841,6 @@ textarea:focus {
   font-size: clamp(0.75rem, 0.6862745098rem + 0.2614379085vw, 1rem);
   color: #fff;
   margin-bottom: 1.5625rem;
-}
-@media (max-width: 600px) {
-  .footer__title {
-    margin-top: 2.5rem;
-    align-items: center;
-    justify-content: center;
-  }
 }
 
 .information__list {
