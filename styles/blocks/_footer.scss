@@ -12,7 +12,8 @@
     column-gap: rem(5);
     
     @media (max-width: 600px){
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: auto auto;
         justify-content: center;
         align-items: center;
 

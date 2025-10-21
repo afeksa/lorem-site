@@ -817,7 +817,8 @@ textarea:focus {
 }
 @media (max-width: 600px) {
   .footer {
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: auto auto;
     justify-content: center;
     align-items: center;
   }
@@ -870,4 +871,17 @@ textarea:focus {
 .soc1als__list {
   display: flex;
   column-gap: clamp(1.25rem, 0.931372549rem + 1.3071895425vw, 2.5rem);
+}
+
+.gallery {
+  margin-top: clamp(1.25rem, 0.612745098rem + 2.614379085vw, 3.75rem);
+  margin-left: 0.625rem;
+  margin-right: 0.625rem;
+}
+.gallery__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(1.875rem, 1.3970588235rem + 1.9607843137vw, 3.75rem);
+  justify-content: center;
+  margin-top: 3.75rem;
 }/*# sourceMappingURL=main.css.map */

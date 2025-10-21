@@ -7,7 +7,6 @@
      <script src="/scripts/Main.js" type="module" defer></script>
     <title>Lorem</title>
 </head>
-<body>
     <header class="header" data-js-header>
         <button class="header__burger-btn" data-js-header-burger-button>
             <span></span>
@@ -20,22 +19,136 @@
         <nav class="header__menu">
             <ul class="header__menu-list">
                 <li class="header__menu-item">
-                    <a href="/index.html" class="header__menu-link" data-js-link>Main</a>
+                    <a href="/index.html" class="header__menu-link is-active">Main</a>
                 </li> 
                 <li class="header__menu-item">
-                    <a href="/gallery.html" class="header__menu-link is-active" data-js-link>Gallery</a>
+                    <a href="/gallery.html" class="header__menu-link">Gallery</a>
                 </li> 
                 <li class="header__menu-item">
-                    <a href="" class="header__menu-link" data-js-link">Projects</a>
+                    <a href="" class="header__menu-link">Projects</a>
                 </li>
                 <li class="header__menu-item">
-                    <a href="" class="header__menu-link" data-js-link>Certifications</a>
+                    <a href="" class="header__menu-link">Certifications</a>
                 </li>  
                 <li class="header__menu-item">
-                    <a href="" class="header__menu-link" data-js-link>Contacts</a>
+                    <a href="" class="header__menu-link">Contacts</a>
                 </li> 
             </ul>
         </nav>
     </header>
+
+    <main>
+        <section class="gallery">
+            <header class="gallery__header">
+                <h1 class="header__title h1">Photo</h1>
+                <h2 class="header__name h2">Gallery</h2>
+            </header>
+            <div class="gallery__body">
+                <ul class="gallery__list">
+                    <li class="gallery__item">
+                        <img src="/image/gallery/1.jpg" alt="building" class="item__image" width="210" height="260">
+                    </li>
+                    <li class="gallery__item">
+                        <img src="/image/gallery/2.jpg" alt="building" class="item__image" width="210" height="260">
+                    </li>
+                    <li class="gallery__item">
+                        <img src="/image/gallery/3.jpg" alt="building" class="item__image" width="210" height="260">
+                    </li>
+                    <li class="gallery__item">
+                        <img src="/image/gallery/4.jpg" alt="building" class="item__image" width="210" height="260">
+                    </li>
+                    <li class="gallery__item">
+                        <img src="/image/gallery/5.jpg" alt="building" class="item__image" width="210" height="260">
+                    </li>
+                    <li class="gallery__item">
+                        <img src="/image/gallery/6.jpg" alt="building" class="item__image" width="210" height="260">
+                    </li>
+                    <li class="gallery__item">
+                        <img src="/image/gallery/7.jpg" alt="building" class="item__image" width="210" height="260">
+                    </li>
+                    <li class="gallery__item">
+                        <img src="/image/gallery/8.jpg" alt="building" class="item__image" width="210" height="260">
+                    </li>
+                    <li class="gallery__item">
+                        <img src="/image/gallery/9.jpg" alt="building" class="item__image" width="210" height="260">
+                    </li>
+                    <li class="gallery__item">
+                        <img src="/image/gallery/10.jpg" alt="building" class="item__image" width="210" height="260">
+                    </li>
+                    
+                </ul>
+            </div>
+        </section>
+        
+    </main>
+        <footer class="footer">
+        <div class="footer__logo">
+            <img src="/image/footer.svg" alt="digital design" height="94" width="145">
+        </div>
+        <div class="footer__information">
+            <h2 class="footer__title">Information</h2>
+            <ul class="information__list">
+                <li class="information__item">
+                   <a href="/index.html" class="footer__link">Main</a>
+                </li>
+                <li class="information__item">
+                    <a href="/gallery.html" class="footer__link">Gallery</a>
+                </li>
+                <li class="information__item">
+                    <a href="/.projects.html" class="footer__link">Projects</a>
+                </li>
+                <li class="information__item">
+                    <a href="/certifications.html" class="footer__link">Certifications</a>
+                </li>
+                <li class="information__item">
+                    <a href="/contacts.html" class="footer__link">Contacts</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__contacts">
+            <h2 class="footer__title">Contacts</h2>
+            <ul class="contacts__list">
+                <li class="contacts__item">
+                    <svg width="11" height="16" viewBox="0 0 11 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.96777 1.98828C3.91982 0.00391303 7.08053 0.00395793 9.03223 1.98828C9.89887 2.86957 10.4021 4.16581 10.4873 5.52246C10.5725 6.87893 10.2359 8.23952 9.49707 9.24121L9.49219 9.24902L9.48633 9.25684L5.5 15.1113L1.51367 9.25684L1.50781 9.24902L1.50293 9.24121L1.36914 9.0498C0.723641 8.06991 0.43285 6.7943 0.512695 5.52246C0.59787 4.16581 1.10113 2.86957 1.96777 1.98828ZM5.55371 3.19238C4.26704 3.19238 3.23843 4.2503 3.23828 5.53809C3.23828 6.826 4.26695 7.88477 5.55371 7.88477C6.8404 7.88468 7.86914 6.82595 7.86914 5.53809C7.86899 4.25035 6.84031 3.19247 5.55371 3.19238Z" stroke="currentColor"/>
+</svg>
+                    <span>1234 Sample Street <br>
+                    Austin Texas 78704</span>
+                </li>
+
+                <li class="contacts__item">
+                    <svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.96387 7.30078L6.96484 7.30176C7.2578 7.54835 7.63462 7.67773 8.02246 7.67773C8.40997 7.67771 8.78703 7.54699 9.08008 7.2998V7.29883L10.0342 6.48926L15.0107 10.5996H0.985352L5.9707 6.45898L6.96387 7.30078ZM15.5996 9.1748L11.1768 5.52051L15.5996 1.76855V9.1748ZM4.8291 5.49121L0.400391 9.16895V1.7373L4.8291 5.49121ZM14.9355 0.400391L8.44922 5.90234V5.90332L8.16211 6.14648L8.13965 6.16211L8.13477 6.16504C8.107 6.18374 8.06664 6.19727 8.02344 6.19727H8.02051C7.95694 6.19727 7.91555 6.17531 7.90234 6.16406L1.09961 0.400391H14.9355Z" stroke="currentColor" stroke-width="0.8"/>
+</svg>
+                    <span>sampleemail@gmail.com</span>
+                </li>
+            </ul>      
+        </div>
+        <div class="footer__soc1als">
+            <h2 class="footer__title">Social Media</h2>
+            <ul class="soc1als__list">
+                <li class="soc1als__item">
+                    <a href="/">
+                        <img src="/image/soc1als/facebook.svg" alt="">
+                    </a>
+                </li>
+                <li class="soc1als__item">
+                    <a href="/">
+                        <img src="/image//soc1als/Linked In.svg" alt="">
+                    </a>
+                </li>
+                <li class="soc1als__item">
+                    <a href="/">
+                        <img src="/image/soc1als/pininterest.svg" alt="">
+                    </a>
+                </li>
+                <li class="soc1als__item">
+                    <a href="/">
+                        <img src="/image/soc1als/twitter.svg" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
