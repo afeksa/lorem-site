@@ -969,4 +969,20 @@ iframe {
     display: flex;
     align-items: center;
   }
+}
+
+.certifications {
+  margin-top: clamp(1.25rem, 0.612745098rem + 2.614379085vw, 3.75rem);
+  margin-left: 0.625rem;
+  margin-right: 0.625rem;
+}
+.certifications__header {
+  margin-bottom: clamp(1.25rem, 0.612745098rem + 2.614379085vw, 3.75rem);
+}
+.certifications__content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.875rem;
+  align-items: center;
+  justify-content: center;
 }/*# sourceMappingURL=main.css.map */

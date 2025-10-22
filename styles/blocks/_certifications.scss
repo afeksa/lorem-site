@@ -1,0 +1,19 @@
+@use '../helpers' as *;
+
+.certifications{
+    margin-top: fluid(60, 20);
+  margin-left: rem(10);
+  margin-right: rem(10);
+
+    &__header{
+        margin-bottom: fluid(60, 20);
+    }
+
+    &__content{
+        display: flex;
+        flex-wrap: wrap;
+        gap: rem(30);
+        align-items: center;
+        justify-content: center;
+    }
+}
